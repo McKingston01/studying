@@ -46,16 +46,16 @@ const Navbar = () => {
             Inicio
             </NavLink>
             <p className='px-2 py-2 text-white'>|</p>
-            <NavLink to={`/mentorias-y-tutorias`} className={({ isActive }) => isActive ? "px-2 rounded-md transition-all text-customLightGreen" : "px-2 text-white rounded-md transition-all hover:text-customLightGreen"}>
+            <NavLink to={'/aboutus'} className={({ isActive }) => isActive ? "px-2 rounded-md transition-all text-customLightGreen" : "px-2 text-white rounded-md transition-all hover:text-customLightGreen"}>
+              Nosotros
+            </NavLink>
+            <p className='px-2 py-2 text-white'>|</p>
+            <NavLink to={'/community'} className={({ isActive }) => isActive ? "px-2 rounded-md transition-all text-customGreen" : "px-2 text-white rounded-md transition-all hover:text-customLightGreen"}>
+              Comunidad
+            </NavLink>
+            <p className='px-2 py-2 text-white'>|</p>
+            <NavLink to={'/courses'} className={({ isActive }) => isActive ? "px-2 rounded-md transition-all text-customGreen" : "px-2 text-white rounded-md transition-all hover:text-customLightGreen"}>
               Cursos
-            </NavLink>
-            <p className='px-2 py-2 text-white'>|</p>
-            <NavLink to={`/BlogView`} className={({ isActive }) => isActive ? "px-2 rounded-md transition-all text-customGreen" : "px-2 text-white rounded-md transition-all hover:text-customLightGreen"}>
-              Blog
-            </NavLink>
-            <p className='px-2 py-2 text-white'>|</p>
-            <NavLink to={`/Contact`} className={({ isActive }) => isActive ? "px-2 rounded-md transition-all text-customGreen" : "px-2 text-white rounded-md transition-all hover:text-customLightGreen"}>
-              Contacto
             </NavLink>
           </div>
         </div>
@@ -89,9 +89,7 @@ const Navbar = () => {
           <NavLink to={`/contact`} className={({ isActive }) => isActive ? "block px-3 py-2 rounded-md text-base text-customGreen" : "block px-3 py-2 rounded-md text-base text-white hover:text-customLightGreen"}>
             Contacto
           </NavLink>
-          <NavLink to={user ? '/dashboard' : '/perfil'} className='flex px-5'>
-            <IoPersonOutline className="h-6 w-6 text-white" />
-          </NavLink>
+          
         </div>
       </div>
     </nav>
